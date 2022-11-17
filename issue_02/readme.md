@@ -15,4 +15,4 @@ python -m pytest >result
 python -m pytest >result
 ```
 Результат пройденного теста будет записан в файле result
->>>>>>> 2e0265c8500509452d7a63732eeae28d6286bf37
+
