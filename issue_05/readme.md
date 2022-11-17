@@ -5,8 +5,15 @@
 python -m pytest -q test_mock.py --cov=what_is_year_now --cov . --cov-report html
 ```
 флаги:
+<<<<<<< HEAD
 ```
 --cov=what_is_year_now - для того, чтобы посмотреть покрытие тестами функции
 
 --cov . --cov-report html - отчет о покрытии в формате html
 ```
+=======
+
+```--cov=what_is_year_now ```- для того, чтобы посмотреть покрытие тестами функции
+
+```--cov . --cov-report html ```- отчет о покрытии в формате html
+>>>>>>> 2e0265c8500509452d7a63732eeae28d6286bf37
