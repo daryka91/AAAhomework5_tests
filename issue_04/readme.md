@@ -3,4 +3,6 @@
 
 Для запуска теста введите в консоли команду:
 
-$ python -m pytest >result
+```
+python -m pytest >result
+```

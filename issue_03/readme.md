@@ -4,6 +4,8 @@
 Для запуска unittest теста введите в терминале
 команду:
 
-$ python -m unittest >result
+```
+python -m unittest >result
+```
 
 Результат пройденного теста будет записан в файле result
