@@ -1,0 +1,32 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
+rootdir: E:\Darya\└└└\Python\Projects\homework5\AAAhomework5_tests
+collected 4 items
+
+second_issue\morse_decode_test.py ..F.                                   [100%]
+
+================================== FAILURES ===================================
+______ test_morse_decode[.... . .-.. .-.. ---   --. ..- -.---HELLO GUY] _______
+
+source_string = '.... . .-.. .-.. ---   --. ..- -.--', result = 'HELLO GUY'
+
+    @pytest.mark.parametrize(
+        "source_string, result",
+        [
+            (".... . .-.. .-.. --- -....- --. ..- -.--", "HELLO-GUY"),
+            ("... --- ...", "SOS"),
+            (".... . .-.. .-.. ---   --. ..- -.--", "HELLO GUY"),
+            (".... . .-.. .-.. --- --..--  --. ..- -.--", "HELLO, GUY")
+        ]
+    )
+    def test_morse_decode(source_string, result):
+>       assert decode(source_string) == result
+E       AssertionError: assert 'HELLOGUY' == 'HELLO GUY'
+E         - HELLO GUY
+E         ?      -
+E         + HELLOGUY
+
+second_issue\morse_decode_test.py:14: AssertionError
+=========================== short test summary info ===========================
+FAILED second_issue/morse_decode_test.py::test_morse_decode[.... . .-.. .-.. ---   --. ..- -.---HELLO GUY]
+========================= 1 failed, 3 passed in 0.08s =========================
